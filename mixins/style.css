@@ -1,0 +1,8 @@
+@keyframes picScale {
+  0% {
+    transform: scale(1);
+  } /* Start at original scale */
+  100% {
+    transform: scale(1.05);
+  } /* Scale up to 1.5 times */
+}/*# sourceMappingURL=style.css.map */

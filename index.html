@@ -3,159 +3,394 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Kelioniu agentura index</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <fieldset>
-            <img src="./pics/orange-basketball-sport-hand-drawn-free-png.jpg">
-            <aside>
-                <a href="login.html">
-                    <button>Log in</button>
-                </a><br>
-                <a href="uzklausos.html">
-                    <button>Uzklausa</button><br><br>
-                </a>
-                <nav>
-                        <a href="#kelpas">Kelioniu pasiulymai</a><br>
-                    <a href="#auto">Autonuoma</a><br>
-                    <a href="#rek">Patarimai keliaujantiems</a><br>
-                    <a href="#zurnalas">Kelioniu zurnalas</a>
-                </nav>
-            </aside>
-        </fieldset>
-    </header>
+    <nav class="navbar navbar-expand-lg bg-light fixed-top header w-100">
+        <div class="container-fluid">
+            <a class="navbar-brand me-5" href="#">Kelioniu agentura</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+                <div class="col-md-8">
+                    <ul class="navbar-nav mr-auto header__nav-list col-12">
+                        <div class="col-5">
+                            <li class="nav-item dropdown header__nav-item">
+                                <a class="nav-link dropdown-toggle header__nav-item" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Kelionių pasiūlymai
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#uzk">Naujoji Zelandija</a></li>
+                                    <li><a class="dropdown-item" href="#sriub">Egiptas</a></li>
+                                    <li><a class="dropdown-item" href="#karst">Islandija</a></li>
+                                    <li><a class="dropdown-item" href="#uzsak">Ispanija</a></li>
+                                </ul>
+                            </li>
+                        </div>
+                        <div class="col-4">
+                            <li class="nav-item header__nav-item">
+                                <a class="nav-link" href="index.html#dienpiet">Autonuoma</a>
+                            </li>
+                        </div>
+                        <div class="col-12 d-flex flex-column flex-lg-row justify-content-between">
+                            <li class="nav-item header__nav-item">
+                                <a class="nav-link" href="index.html#dienpiet">Kelionių istorijos</a>
+                            </li>
+                        </div>
+                    </ul>
+                </div>
+                <div class="col-md-4 d-flex justify-content-lg-end">
+                    <div class="col-lg-2 me-2">
+                        <button class="btn btn-secondary" type="button">
+                            Uzklausa
+                    </div>
+                    <div class="d-flex text-lg-start text-left col-lg-4 text-lg-end">
+                    <div class="container-fluid">
+                        <button class="btn btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#loginFormCollapse" aria-expanded="false" aria-controls="loginFormCollapse">
+                            Login
+                        </button>
+                        <div class="collapse" id="loginFormCollapse">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <form class="d-flex flex-column justify-content-end mt-lg-6">
+                                        <input class="form-control mb-2 col-md-3 mt-0" type="search" placeholder="Username" aria-label="Username">
+                                        <input class="form-control mb-2 col-md-3" type="search" placeholder="Email" aria-label="Email">
+                                        <input class="form-control mb-2 col-md-3" type="password" placeholder="Password" aria-label="Password">
+                                        <button class="btn btn-outline-success col-md-12 mb-2 d-flex justify-content-center" type="submit">Prisijungti</button>
+                                        <p class="text-center"><a href="login.html">Forgot me password</a></p>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex text-left col-lg-4">
+                    <div class="container-fluid">
+                        <button class="btn btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#registerFormCollapse" aria-expanded="false" aria-controls="registerFormCollapse">
+                            Sukurti paskyra
+                        </button>
+                        <div class="collapse" id="registerFormCollapse">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <form class="d-flex flex-column justify-content-end mt-md-4">
+                                        <input class="form-control mb-2 col-md-3 mt-md-0" type="search" placeholder="Username" aria-label="Username">
+                                        <input class="form-control mb-2 col-md-3" type="search" placeholder="Email" aria-label="Email">
+                                        <input class="form-control mb-2 col-md-3" type="password" placeholder="Password" aria-label="Password">
+                                        <button class="btn btn-outline-success col-md-12 mb-2 d-flex justify-content-center" type="submit">Sukurti</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    
     <main>
-        <h1>
-            Keliones!
-        </h1>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/U5KkwCE176A?si=nG9ydSDwwWAQUAsk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        <h2>
-            <p id="kelpas">Kelioniu pasiulymai</p>
-        </h2>
-        <fieldset>
+        <div style="height: 70px"></div>
+        <div class="container travelcontainer pt-3 pt-xl-0">
+            <div class="row d-flex justify-content-center">
+                <div class="col-12 text-center">
+                    <h2 id="kelpas" style="font-weight: bold;">Kelioniu pasiulymai</h2>
+                </div> 
+            </div>
             <article>
-                <h2>NZ</h2>
-                <img src="./pics/nz.jpg">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem, est, rerum itaque dicta voluptatum, adipisci qui fuga cumque delectus reiciendis illum tempore non cum a vitae unde optio. Est, consequatur.</p>
-                <button>100&euro;</button><br><br><br>
+                <div class="container mt-5">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="text-center"><h3>Naujoji Zelandija</h3></div>
+                            <div class="d-flex flex-column align-items-center flex-wrap">
+                                <a href="www.google.com" class="travelcontainer__nzpicture">
+                                    <div class="travelcontainer__nzpic1cont">
+                                        <img src="./pics/nz1.jpg" alt="new zealand picture 1" class="img-fluid travelcontainer__nzpic1 w-100">
+                                    </div>
+                                    <p class="travelcontainer__nzprice">1000&euro;</p>
+                                </a>
+                                <div class="col-md-12 mt-3">
+                                    <p class="text-left">Lorem1 ipsum dolor sit, amet consectetur adipisicing elit. Qui illo quasi accusantium dicta debitis, dolore assumenda perferendis voluptates recusandae nam impedit praesentium quos, corporis, officiis minima alias rerum deserunt nesciunt numquam eos sapiente cupiditate tenetur veritatis sit. Quae fugiat ex ab repellendus fugit, quod itaque ullam, harum dolorem nesciunt officiis rerum reprehenderit labore velit molestias et non quidem vitae, reiciendis eum neque suscipit eveniet ratione. Magni natus minus veritatis modi eos ullam tempora voluptatem beatae cupiditate impedit, velit repellendus mollitia deserunt sint, neque blanditiis? Reprehenderit ullam, quos magnam neque ipsa aliquid, in repellat suscipit veritatis commodi sed optio. Magnam, nihil?</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             
-                <h2>Death</h2>
-                <img src="./pics/sahara.jpg">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore rerum quos totam, veniam ex quae in ipsa illo, nobis nihil dicta sint cupiditate tempore temporibus quisquam, dolorum aperiam ab! Similique.</p>
-                <button>200&dollar;</button><br><br><br>
+                <div class="container mt-5">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="text-center"><h3>Egiptas</h3></div>
+                            <div class="d-flex flex-column align-items-center flex-wrap">
+                                <a href="#" class="travelcontainer__egyptpicture">
+                                    <div class="travelcontainer__egyptpic1cont">
+                                        <img src="./pics/egypt1.jpg" alt="egypt picture 1" class="img-fluid travelcontainer__egyptpic1 w-100">
+                                    </div>
+                                    <p class="travelcontainer__egyptprice">1000&euro;</p>
+                                </a>
+                                <div class="col-md-12 mt-3">
+                                    <p class="text-left">Lorem1 ipsum dolor sit, amet consectetur adipisicing elit. Qui illo quasi accusantium dicta debitis, dolore assumenda perferendis voluptates recusandae nam impedit praesentium quos, corporis, officiis minima alias rerum deserunt nesciunt numquam eos sapiente cupiditate tenetur veritatis sit. Quae fugiat ex ab repellendus fugit, quod itaque ullam, harum dolorem nesciunt officiis rerum reprehenderit labore velit molestias et non quidem vitae, reiciendis eum neque suscipit eveniet ratione. Magni natus minus veritatis modi eos ullam tempora voluptatem beatae cupiditate impedit, velit repellendus mollitia deserunt sint, neque blanditiis? Reprehenderit ullam, quos magnam neque ipsa aliquid, in repellat suscipit veritatis commodi sed optio. Magnam, nihil?</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container mt-5">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="text-center"><h3>Islandija</h3></div>
+                            <div class="d-flex flex-column align-items-center flex-wrap">
+                                <a href="#" class="travelcontainer__icelandpicture">
+                                    <div class="travelcontainer__icelandpic1cont">
+                                        <img src="./pics/iceland1.jpg" alt="iceland picture 1" class="img-fluid travelcontainer__icelandpic1 w-100">
+                                    </div>
+                                    <p class="travelcontainer__icelandprice">1000&euro;</p>
+                                </a>
+                                <div class="col-md-12 mt-3">
+                                    <p class="text-left">Lorem1 ipsum dolor sit, amet consectetur adipisicing elit. Qui illo quasi accusantium dicta debitis, dolore assumenda perferendis voluptates recusandae nam impedit praesentium quos, corporis, officiis minima alias rerum deserunt nesciunt numquam eos sapiente cupiditate tenetur veritatis sit. Quae fugiat ex ab repellendus fugit, quod itaque ullam, harum dolorem nesciunt officiis rerum reprehenderit labore velit molestias et non quidem vitae, reiciendis eum neque suscipit eveniet ratione. Magni natus minus veritatis modi eos ullam tempora voluptatem beatae cupiditate impedit, velit repellendus mollitia deserunt sint, neque blanditiis? Reprehenderit ullam, quos magnam neque ipsa aliquid, in repellat suscipit veritatis commodi sed optio. Magnam, nihil?</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             
-                <h2>Gaidziai</h2>
-                <img src="./pics/gaidziai.jpg">
-                <p>kas jiems dave toki varda :D</p>
-                <button>500&yen;</button><br><br><br>
+                <div class="container mt-5">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="text-center"><h3>Ispanija</h3></div>
+                            <div class="d-flex flex-column align-items-center flex-wrap">
+                                <a href="#" class="travelcontainer__tenerifepicture">
+                                    <div class="travelcontainer__tenerifepic1cont">
+                                        <img src="./pics/tenerife1.jpg" alt="tenerife picture 1" class="img-fluid travelcontainer__tenerifepic1 w-100">
+                                    </div>
+                                    <p class="travelcontainer__tenerifeprice">1000&euro;</p>
+                                </a>
+                                <div class="col-md-12 mt-3">
+                                    <p class="text-left">Lorem1 ipsum dolor sit, amet consectetur adipisicing elit. Qui illo quasi accusantium dicta debitis, dolore assumenda perferendis voluptates recusandae nam impedit praesentium quos, corporis, officiis minima alias rerum deserunt nesciunt numquam eos sapiente cupiditate tenetur veritatis sit. Quae fugiat ex ab repellendus fugit, quod itaque ullam, harum dolorem nesciunt officiis rerum reprehenderit labore velit molestias et non quidem vitae, reiciendis eum neque suscipit eveniet ratione. Magni natus minus veritatis modi eos ullam tempora voluptatem beatae cupiditate impedit, velit repellendus mollitia deserunt sint, neque blanditiis? Reprehenderit ullam, quos magnam neque ipsa aliquid, in repellat suscipit veritatis commodi sed optio. Magnam, nihil?</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </article>
-        </fieldset>
+        </div>
+        <div class="container mt-5 mt-lg-0">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h2><p class="" style="font-weight: bold;" id="paidslavery">Rekomendacijos</p></h2>
+                </div>
+                <div class="col-md-12 mb-3">
+                    <p class="country-name border-bottom" data-bs-toggle="collapse" href="#collapse-nz" role="button" aria-expanded="false" aria-controls="collapse-nz">Naujoji Zelandija</p>
+                    <div class="collapse" id="collapse-nz">
+                        <div class="card card-body">
+                            <p>Vizos nereikia trumpalaikiam buvimui, bet reikia paso. Ir nedaryti šito:</p>
+                            <div>
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/UNyB7iFsUyg?si=opw_04BcDP3dtQxU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 mb-3">
+                    <p class="country-name border-bottom" data-bs-toggle="collapse" href="#collapse-egypt" role="button" aria-expanded="false" aria-controls="collapse-egypt">Egiptas</p>
+                    <div class="collapse" id="collapse-egypt">
+                        <div class="card card-body">
+                            <p>Vykstant į Egiptą, Lietuvos Respublikos pasas turi galioti ne mažiau nei 6 mėnesius nuo išvykimo iš Egipto datos.
+                            Keliaujantys į Egiptą turistiniais tikslais vizą gali gauti atskridę oro uostuose. Ir nelysti į pasienį su Izraeliu nes ten
+                            biški karas vyksta.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 mb-3">
+                    <p class="country-name border-bottom" data-bs-toggle="collapse" href="#collapse-iceland" role="button" aria-expanded="false" aria-controls="collapse-iceland">Islandija</p>
+                    <div class="collapse" id="collapse-iceland">
+                        <div class="card card-body">
+                            <a href="https://safetravel.is/"><span class="">Saugus keliavimas</span></a>
+                            <a href="https://en.vedur.is">Meteorologijos tarnyba</a>
+                            <a href="https://www.almannavarnir.is/english/%C2%A0">Civilines apsaugos ir gelbejimo tarnyba</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 mb-3">
+                    <p class="country-name border-bottom" data-bs-toggle="collapse" href="#collapse-spain" role="button" aria-expanded="false" aria-controls="collapse-spain">Ispanija</p>
+                    <div class="collapse" id="collapse-spain">
+                        <div class="card card-body">
+                            <a href="https://turismo.gob.es/en-us/Paginas/Index.aspx">Turizmo ministerija</span></a>
+                            <a href="https://www.policia.es/_es/idioma_en_policia.php">Policijos rekomendacijos saugiam turizmui</a>
+                        </div>
+                    </div>
+                </div>
         <h2>
-            <p id="rek">Rekomendacijos</p>
+            <p id="auto"><h2 class="text-center" style="font-weight: bold;">Autonuoma</h2></p>
         </h2>
-        <fieldset>
-            <ol>
-                <li>aaaaaaaaaa</li>
-                <ul>
-                    <li>aaaaaaaaaaaaaa</li>
-                    <li>aaaaaaaaaaaaaa</li>
-                    <li>aaaaaaaaaaaaaa</li>
-                    <li>aaaaaaaaaaaaaa</li>
-                </ul>
-                <li>aaaaaaaaaaaaaa</li>
-                <li>aaaaaaaaaaaaaa</li>
-                <ul>
-                    <li>aaaaaaaaaaaaaa</li>
-                    <li>aaaaaaaaaaaaaa</li>
-                    <li>aaaaaaaaaaaaaa</li>
-                </ul>
-                <li>aaaaaaaaaaaaaa</li>
-                <ul>
-                    <li>aaaaaaaaaaaaaa</li>
-                    <li>aaaaaaaaaaaaaa</li>
-                </ul>
-            </ol>
-        </fieldset>
+        <div class="carcarousel-container" style="position: relative;">
+            <div id="carouselExampleControls" class="carousel slide carcarousel" data-bs-interval="false">
+                <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="carcarousel__car1">
+                    <img src="./pics/cars/passat.jpg" class="d-block w-100 carcarousel__pic" alt="Car 1">
+                </div>
+                <div class="carousel-caption">
+                  <h5>VW</h5>
+                  <p class="car-text">Rusty af. Tell you hwat, you crash this thing in a ditch and we split the insurance. Yeah?</p>
+                  <button type="button" class="btn btn-primary">Rent for a week</button>
+                  <button type="button" class="btn btn-primary">Rent rent for 2 weeks</button>
+                  <button type="button" class="btn btn-primary mt-1 mt-md-0">Rent forever</button>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="carcarousel__car2">
+                    <img src="./pics/cars/lada.jpg" class="d-block w-100 carcarousel__pic" alt="Car 2">
+                </div>
+                <div class="carousel-caption">
+                  <h5>Lada</h5>
+                  <p class="car-text">Why is this metal not being used in something useful?</p>
+                  <button type="button" class="btn btn-primary">Rent for a week</button>
+                  <button type="button" class="btn btn-primary">Rent rent for 2 weeks</button>
+                  <button type="button" class="btn btn-primary mt-1 mt-md-0">Rent forever</button>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="carcarousel__car3">
+                    <img src="./pics/cars/bmw.jpg" class="d-block w-100 carcarousel__pic" alt="Car 1">
+                </div>
+                <div class="carousel-caption">
+                  <h5>BMW</h5>
+                  <p class="car-text">Bus stops and traffic lights, beware.</p>
+                  <button type="button" class="btn btn-primary">Rent for a week</button>
+                  <button type="button" class="btn btn-primary">Rent rent for 2 weeks</button>
+                  <button type="button" class="btn btn-primary mt-1 mt-md-0">Rent forever</button>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="carcarousel__car4">
+                    <img src="./pics/cars/truck.jpg" class="d-block w-100 carcarousel__pic" alt="Car 1">
+                </div>
+                <div class="carousel-caption">
+                  <h5>Average american truck</h5>
+                  <p class="car-text">Go on, you can store your massive ego in this thing.</p>
+                  <button type="button" class="btn btn-primary">Rent for a week</button>
+                  <button type="button" class="btn btn-primary">Rent rent for 2 weeks</button>
+                  <button type="button" class="btn btn-primary mt-1 mt-md-0">Rent forever</button>
+                </div>
+              </div>
+            </div>
+            </div>
+            <div class="carousel-controls">
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="0" class="active"></button>
+              <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="1"></button>
+              <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="2"></button>
+              <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="3"></button>
+            </div>
+          </div>
         <h2>
-            <p id="auto">Autonuoma</p>
+            <p id="zurnalas"><h2>Kelioniu istorijos</h2></p>
         </h2>
-        <fieldset>
-            <table border="1">
-                <thead>
-                    <caption>AAAAAAAAAAA</caption>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Tautovezis</td>
-                        <td><img src="./pics/passat.jpg"></td>
-                        <td>Kaina 1d: 5&euro;<br>Kaina 2d: 9&euro;<br>Kaina 3d: 12&euro;</td>
-                    </tr>
-                    <tr>
-                        <td>GAZ</td>
-                        <td><img src="pics/gaz.jpg"> </td>
-                        <td>Kaina 1d: 5&dollar;<br>Kaina 2d: 9&dollar;<br>Kaina 3d: 12&dollar;</td>
-                    </tr>
-                    <tr>
-                        <td>Tank</td>
-                        <td><img src="pics/tank.jpg"> </td>
-                        <td>Kaina 1d: 5&pound;<br>Kaina 2d: 9&pound;<br>Kaina 3d: 12&pound;</td>
-                    </tr>
-                </tbody>
-            </table>
-        </fieldset>
-        <h2>
-            <p id="zurnalas"><h2>Kelioniu zurnalas</h2></p>
-        </h2>
-        <fieldset>
             <article>
-                <h3>Lorem ipsum dolor sit amet.</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum accusantium consectetur, ducimus illo <span><q>odio omnis <b>voluptas repellat temporibus</b> dicta et ex</q></span> quae eum rem similique quam perspiciatis velit impedit blanditiis saepe voluptates! Neque id enim at doloribus vel? Enim molestiae amet consectetur fugit libero ut placeat omnis ab expedita sunt!</p>
-                    <h4>Lorem ipsum dolor sit.</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus tempora nemo ut iste blanditiis temporibus, ea quam rem. Rerum sapiente magni culpa debitis sed esse saepe repellendus cum. Obcaecati, beatae.</p>
-                    <a href="https://www.google.com">further reading</a><br>
-                    <h4>Lorem ipsum dolor sit amet consectetur.</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident distinctio nesciunt excepturi at possimus odit necessitatibus, libero quo, dolorum quod error iusto quis quae hic vel nihil quaerat explicabo amet minus atque cumque. Voluptate voluptas at, sed laudantium maxime praesentium.</p>
-            </article><br>
-            <article>
-                <h3>Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima consequatur beatae adipisci doloribus, blanditiis quaerat natus laboriosam? Recusandae eius odio, fugit voluptatum exercitationem fugiat facilis placeat, dolores, cumque voluptatibus odit? Temporibus tempore ipsum culpa corporis cum, quod placeat optio corrupti ipsa eius est inventore explicabo nemo laboriosam, libero distinctio quisquam consequuntur debitis consectetur accusamus. Tenetur ex cumque quia aliquid molestiae.</p>
-                    <h4>Lorem, ipsum dolor.</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa dolorum ratione laboriosam ducimus enim in eos corporis ullam quam, totam suscipit iste. Asperiores ratione, cum dignissimos aliquam repellendus consequatur et maiores quaerat ad, vero odit quidem, nesciunt deleniti porro nulla?</p>
-                    <a href="https://www.facebook.com">further reading</a><br>
-                    <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, accusantium.</h4>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt minima at atque beatae, quaerat <span><q>aperiam <b>voluptate id possimus</b> voluptatum alias</q></span> deleniti eligendi maiores iste pariatur veniam sapiente officiis nostrum tenetur consequatur consectetur laborum? Tempora hic molestias aspernatur eveniet quod? Velit culpa, quos eligendi alias quas magni quis ab repudiandae repellendus!</p>
+                <div class="container">
+                    <div class="row d-flex flex-column-reverse flex-md-row">
+                        <div class="col-md-8 ps-0 d-flex flex-column flex-column-reverse">
+                            <div><h3>Lorem ipsum dolor sit amet.</h3>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum accusantium consectetur, ducimus illo <span><q>odio omnis <b>voluptas repellat temporibus</b> dicta et ex</q></span> quae eum rem similique quam perspiciatis velit impedit blanditiis saepe voluptates! Neque id enim at doloribus vel? Enim molestiae amet consectetur fugit libero ut placeat omnis ab expedita sunt!</div>
+                            <div><h4>Lorem ipsum dolor sit.</h4>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus tempora nemo ut iste blanditiis temporibus, ea quam rem. Rerum sapiente magni culpa debitis sed esse saepe repellendus cum. Obcaecati, beatae.</div>
+                            <div><h4>Lorem ipsum dolor sit amet consectetur.</h4>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident distinctio nesciunt excepturi at possimus odit necessitatibus, libero quo, dolorum quod error iusto quis quae hic vel nihil quaerat explicabo amet minus atque cumque. Voluptate voluptas at, sed laudantium maxime praesentium.</div>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="pics/nz2.jpg" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                    </div>
+                </div>
             </article>
             <article>
-                <h3>Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima consequatur beatae adipisci doloribus, blanditiis quaerat natus laboriosam? Recusandae eius odio, fugit voluptatum exercitationem fugiat facilis placeat, dolores, cumque voluptatibus odit? Temporibus tempore ipsum culpa corporis cum, quod placeat optio corrupti ipsa eius est inventore explicabo nemo laboriosam, libero distinctio quisquam consequuntur debitis consectetur accusamus. Tenetur ex cumque quia aliquid molestiae.</p>
-                    <h4>Lorem, ipsum dolor.</h4>
-                    <a href="https://www.youtube.com">further reading</a><br>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa dolorum ratione laboriosam ducimus enim in eos corporis ullam quam, totam suscipit iste. Asperiores ratione, cum dignissimos aliquam repellendus consequatur et maiores quaerat ad, vero odit quidem, nesciunt deleniti porro nulla?</p>
-                    <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, accusantium.</h4>
-                    <p>Lorem, <span><q>ipsum dolor sit <b>amet consectetur</b> adipisicing</q></span> elit. Sunt minima at atque beatae, quaerat aperiam voluptate id possimus voluptatum alias deleniti eligendi maiores iste pariatur veniam sapiente officiis nostrum tenetur consequatur consectetur laborum? Tempora hic molestias aspernatur eveniet quod? Velit culpa, quos eligendi alias quas magni quis ab repudiandae repellendus!</p>
+                <div class="container mt-2">
+                    <div class="row d-flex flex-column-reverse flex-md-row">
+                        <div class="col-md-8 ps-0 d-flex flex-column flex-column-reverse">
+                            <div><h3>Lorem ipsum dolor sit amet.</h3>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum accusantium consectetur, ducimus illo <span><q>odio omnis <b>voluptas repellat temporibus</b> dicta et ex</q></span> quae eum rem similique quam perspiciatis velit impedit blanditiis saepe voluptates! Neque id enim at doloribus vel? Enim molestiae amet consectetur fugit libero ut placeat omnis ab expedita sunt!</div>
+                            <div><h4>Lorem ipsum dolor sit.</h4>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus tempora nemo ut iste blanditiis temporibus, ea quam rem. Rerum sapiente magni culpa debitis sed esse saepe repellendus cum. Obcaecati, beatae.</div>
+                            <div><h4>Lorem ipsum dolor sit amet consectetur.</h4>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident distinctio nesciunt excepturi at possimus odit necessitatibus, libero quo, dolorum quod error iusto quis quae hic vel nihil quaerat explicabo amet minus atque cumque. Voluptate voluptas at, sed laudantium maxime praesentium.</div>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="pics/egypt2.jpg" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                    </div>
+                </div>
             </article>
             <article>
-                <h3>Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
-                    <p>Lorem ipsum dolor <span><q>sit amet <b>consectetur</b> adipisicing</q></span> elit. Minima consequatur beatae adipisci doloribus, blanditiis quaerat natus laboriosam? Recusandae eius odio, fugit voluptatum exercitationem fugiat facilis placeat, dolores, cumque voluptatibus odit? Temporibus tempore ipsum culpa corporis cum, quod placeat optio corrupti ipsa eius est inventore explicabo nemo laboriosam, libero distinctio quisquam consequuntur debitis consectetur accusamus. Tenetur ex cumque quia aliquid molestiae.</p>
-                    <h4>Lorem, ipsum dolor.</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa dolorum ratione laboriosam ducimus enim in eos corporis ullam quam, totam suscipit iste. Asperiores ratione, cum dignissimos aliquam repellendus consequatur et maiores quaerat ad, vero odit quidem, nesciunt deleniti porro nulla?</p>
-                    <a href="https://www.instagram.com">further reading</a><br>
-                    <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, accusantium.</h4>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt minima at atque beatae, quaerat aperiam voluptate id possimus voluptatum alias deleniti eligendi maiores iste pariatur veniam sapiente officiis nostrum tenetur consequatur consectetur laborum? Tempora hic molestias aspernatur eveniet quod? Velit culpa, quos eligendi alias quas magni quis ab repudiandae repellendus!</p>
+                <div class="container mt-2">
+                    <div class="row d-flex flex-column-reverse flex-md-row">
+                        <div class="col-md-8 ps-0 d-flex flex-column flex-column-reverse">
+                            <div><h3>Lorem ipsum dolor sit amet.</h3>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum accusantium consectetur, ducimus illo <span><q>odio omnis <b>voluptas repellat temporibus</b> dicta et ex</q></span> quae eum rem similique quam perspiciatis velit impedit blanditiis saepe voluptates! Neque id enim at doloribus vel? Enim molestiae amet consectetur fugit libero ut placeat omnis ab expedita sunt!</div>
+                            <div><h4>Lorem ipsum dolor sit.</h4>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus tempora nemo ut iste blanditiis temporibus, ea quam rem. Rerum sapiente magni culpa debitis sed esse saepe repellendus cum. Obcaecati, beatae.</div>
+                            <div><h4>Lorem ipsum dolor sit amet consectetur.</h4>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident distinctio nesciunt excepturi at possimus odit necessitatibus, libero quo, dolorum quod error iusto quis quae hic vel nihil quaerat explicabo amet minus atque cumque. Voluptate voluptas at, sed laudantium maxime praesentium.</div>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="pics/iceland2.jpg" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                    </div>
+                </div>
             </article>
-        </fieldset>
+            <article>
+                <div class="container mt-2">
+                    <div class="row d-flex flex-column-reverse flex-md-row">
+                        <div class="col-md-8 ps-0 d-flex flex-column flex-column-reverse">
+                            <div><h3>Lorem ipsum dolor sit amet.</h3>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum accusantium consectetur, ducimus illo <span><q>odio omnis <b>voluptas repellat temporibus</b> dicta et ex</q></span> quae eum rem similique quam perspiciatis velit impedit blanditiis saepe voluptates! Neque id enim at doloribus vel? Enim molestiae amet consectetur fugit libero ut placeat omnis ab expedita sunt!</div>
+                            <div><h4>Lorem ipsum dolor sit.</h4>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus tempora nemo ut iste blanditiis temporibus, ea quam rem. Rerum sapiente magni culpa debitis sed esse saepe repellendus cum. Obcaecati, beatae.</div>
+                            <div><h4>Lorem ipsum dolor sit amet consectetur.</h4>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident distinctio nesciunt excepturi at possimus odit necessitatibus, libero quo, dolorum quod error iusto quis quae hic vel nihil quaerat explicabo amet minus atque cumque. Voluptate voluptas at, sed laudantium maxime praesentium.</div>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="pics/tenerife2.jpg" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                    </div>
+                </div>
+            </article>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
-<footer>
-    <fieldset>  
-        &copy;Mantas
+<footer class="mt-2">
+    <div class="container">
         <address>
-            <a href="mailto:aaa@aaa.aaa">Send email</a>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d142.06366238435052!2d25.543209991972375!3d55.2703577495212!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dd673a7b7521eb%3A0xcf83fb49f603e03f!2sGaid%C5%BEiai%2C%2033353%20Mol%C4%97tai%20District%20Municipality!5e0!3m2!1sen!2slt!4v1708541197836!5m2!1sen!2slt" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-3 d-flex align-items-center justify-content-center">
+                        <p class="display-4">Kelionių agentūra</p>
+                    </div>
+                    <div class="col-1"></div>
+                    <div class="col-md-4 d-flex align-items-center justify-content-center flex-column fw-bold fs-5">
+                        <p class="m-2 p-0">&copy;Scam travel agency inc.</p>
+                        <button type="button" class="btn btn-primary">Contact via email</button>
+                        <p class="m-2 p-0">+37012345678</p>
+                    </div>
+                    <div class="col-md-4 d-flex justify-content-end">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d10039556.229226446!2d-39.520821179540995!3d30.00178678768679!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2slt!4v1713119285158!5m2!1sen!2slt" width="300" height="225" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>  
+                </div> 
+            </div>
         </address>
-    </fieldset>
+    </div>
 </footer>
 </html>

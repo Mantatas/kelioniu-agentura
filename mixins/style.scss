@@ -1,0 +1,18 @@
+@mixin word-highlight{
+    transition: font-weight 0.2s ease;
+    &:hover{
+        font-weight: bold;
+    }
+}
+
+@mixin picScale($duration: 1s) {
+    transition: transform 0.1s; /* Smooth transition for hover-out effect */
+
+    &:hover {
+        animation: picScale #{$duration} forwards; /* Start the animation on hover and keep the final state */
+    }
+}
+@keyframes picScale {
+    0% { transform: scale(1); } /* Start at original scale */
+    100% { transform: scale(1.05); } /* Scale up to 1.5 times */
+}
